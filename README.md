@@ -13,6 +13,10 @@ Swing + Apach Velocity编写的代码生成工具
 
 
 启动方式：
+
 1. 导出生成eclipse插件
 
 2. 直接运行codegen.swing.CodeGenWindow.java
+
+
+备注：每次生成完成后会保留最近的一份设置在临时文件中，当下一次点击代码生成工具的时候会主动获取上一次的设置。
