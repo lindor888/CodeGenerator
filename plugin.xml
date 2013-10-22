@@ -17,7 +17,7 @@
          </menu>
          <action
                label="&amp;Code Generator"
-               icon="icons/codeGen.jpg"
+               icon="icons/codeGen.gif"
                class="codegen.actions.CodeGenAction"
                tooltip="代码生成工具"
                menubarPath="sampleMenu/sampleGroup"
