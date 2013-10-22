@@ -1,0 +1,223 @@
+<entity>
+
+    <outputAll>D:\WorkSpace\TestSpace\codeGen\src\codegen\main\business\output</outputAll>
+
+	<!-- 包 -->
+	<packagePath>com.gearteks.framework.model</packagePath>
+    <controllerPackagePath>com.gearteks.framework.controller</controllerPackagePath>
+    <strutsActionPath>/maintain/staticData</strutsActionPath>
+    <resourceKeyPath>admin.policy.</resourceKeyPath>
+    <jspPath>/maintain/staticData</jspPath>
+   
+    <author>zhajing</author>
+	
+	<!-- 类名 -->
+	<className>Perference</className>
+	
+	<!-- 数据库表名 -->
+	<tableName>perference</tableName>
+	
+    
+    <idGetter>IDNAME_PERFERENCE_ID</idGetter>
+    
+    <idCounter>perferenceId</idCounter>
+   
+    <bussinessNameField></bussinessNameField>
+    
+    <viewFuncId>-1</viewFuncId>
+    
+    <editFuncId>-1</editFuncId>
+    
+    <useDialog>true</useDialog>
+    
+    <i18n>
+        <key></key>
+         <en></en>
+         <zh>Pererence</zh>
+         <tw></tw>
+    </i18n>
+    
+	<!-- 实体属性 -->
+	<fields>
+		<field>
+            <sysObj></sysObj><!-- currency -->
+            <sysMember>
+               <memberType></memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+               <involvement></involvement>
+            </sysMember>
+			<fieldName>perferenceId</fieldName>
+			<fieldType>Integer</fieldType>
+			<columnName>PerferenceId</columnName>
+			<columnType>id</columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+			<notnull>true</notnull>
+            <defaultValue></defaultValue><!-- auto -->
+            <options></options>
+			<pk>true</pk>
+			<show>false</show>
+			<showInList>false</showInList>
+			<i18n>
+				<key></key>
+				<en></en>
+				<zh></zh>
+				<tw></tw>
+			</i18n>
+			<readonly>true</readonly>
+			<component>
+				<type></type><!-- text|date -->
+				<required></required>
+			</component>
+		</field>
+      
+        <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType></memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement></involvement>
+         </sysMember>
+         <fieldName>includeSubGroups</fieldName>
+         <fieldType>Boolean</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName>Include_SubGroups</columnName>
+         <columnType>boolean</columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>true</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInList>true</showInList>
+         <i18n>
+            <key>includeSubGroup</key>
+            <en></en>
+            <zh>Including SubGroups</zh>
+            <tw></tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type></type><!-- text|date -->
+            <format></format><!-- number|text -->
+            <required></required>
+         </component>
+       </field>
+      
+     	 <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType></memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement></involvement>
+         </sysMember>
+         <fieldName>selectingBy</fieldName>
+         <fieldType>String</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName>Select_By</columnName>
+         <columnType>type3</columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>true</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInList>true</showInList>
+         <i18n>
+            <key>selecting.by</key>
+            <en></en>
+            <zh>Selecting By</zh>
+            <tw></tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type>text</type><!-- text|date -->
+            <format>text</format><!-- number|text -->
+            <required>text</required>
+         </component>
+        </field>
+       
+        <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType>Group</memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement>Group</involvement>
+         </sysMember>
+         <fieldName>groupSets</fieldName>
+         <fieldType>Set</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName></columnName>
+         <columnType></columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>false</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInList>true</showInList>
+         <i18n>
+            <key>group</key>
+            <en></en>
+            <zh>Group</zh>
+            <tw></tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type>text</type><!-- text|date -->
+            <format>number</format><!-- number|text -->
+            <required>true</required>
+         </component>
+       </field>
+       
+       <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType>Company</memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement>Supplier</involvement>
+         </sysMember>
+         <fieldName>preCompanySets</fieldName>
+         <fieldType>Set</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName></columnName>
+         <columnType></columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>false</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInList>true</showInList>
+         <i18n>
+            <key>preSupplier</key>
+            <en></en>
+            <zh>Preferred Suppliers</zh>
+            <tw></tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type>text</type><!-- text|date -->
+            <format>text</format><!-- number|text -->
+            <required>true</required>
+         </component>
+       </field>
+       
+       <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType>Product</memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement>Pro</involvement>
+         </sysMember>
+         <fieldName>productSets</fieldName>
+         <fieldType>Set</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName></columnName>
+         <columnType></columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>false</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInList>true</showInList>
+         <i18n>
+            <key>group</key>
+            <en></en>
+            <zh>Group</zh>
+            <tw></tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type>text</type><!-- text|date -->
+            <format>text</format><!-- number|text -->
+            <required>true</required>
+         </component>
+       </field>
+       
+       
+	</fields>
+</entity>

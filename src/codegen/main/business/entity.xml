@@ -1,0 +1,135 @@
+<entity>
+
+    <outputAll>D:\WorkSpace\HeadR1Space\Head_R1\src\com\wisagetech\codegen\output</outputAll>
+
+	<!-- 包 -->
+	<packagePath>com.wisagetech.codegen.output</packagePath>
+    <controllerPackagePath>com.wisagetech.codegen.output</controllerPackagePath>
+    <strutsActionPath>/maintain/usersGroups</strutsActionPath>
+    <resourceKeyPath>headcountForecast.</resourceKeyPath>
+    <jspPath>/maintain/usersGroups</jspPath>
+   
+    <author>kentchen</author>
+	
+	<!-- 类名 -->
+	<className>HeadcountForecast</className>
+	
+	<!-- 数据库表名 -->
+	<tableName>headcount_forecast</tableName>
+	
+	<advanceSearch>false</advanceSearch>
+    
+    <idGetter>IDNAME_HEADCOUNT_FORECAST_ID</idGetter>
+    
+    <idCounter>HeadcountForecastId</idCounter>
+   
+    <bussinessNameField>forecastName</bussinessNameField>
+    
+    <viewFuncId>-1</viewFuncId>
+    
+    <editFuncId>-1</editFuncId>
+    
+    <useDialog>true</useDialog>
+    
+    <i18n>
+        <key></key>
+         <en></en>
+         <zh>招聘预测</zh>
+         <tw></tw>
+    </i18n>
+    
+	<!-- 实体属性 -->
+	<fields>
+		<field>
+            <sysObj></sysObj><!-- currency -->
+            <sysMember>
+               <memberType></memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+               <involvement></involvement>
+            </sysMember>
+			<fieldName>forecastId</fieldName>
+			<fieldType>java.lang.Integer</fieldType>
+			<columnName>ForecastId</columnName>
+			<columnType>id</columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+			<notnull>true</notnull>
+            <defaultValue></defaultValue><!-- auto -->
+            <options></options>
+			<pk>true</pk>
+			<show>false</show>
+			<showInAdvanceSearch>false</showInAdvanceSearch>
+			<showInList>false</showInList>
+			<i18n>
+				<key></key>
+				<en></en>
+				<zh></zh>
+				<tw></tw>
+			</i18n>
+			<readonly>true</readonly>
+			<component>
+				<type></type><!-- text|date -->
+				<required></required>
+			</component>
+		</field>
+      
+        <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType></memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement></involvement>
+         </sysMember>
+         <fieldName>forecastName</fieldName>
+         <fieldType>java.lang.String</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName>ForecastName</columnName>
+         <columnType>string1</columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>true</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInAdvanceSearch>false</showInAdvanceSearch>
+         <showInList>true</showInList>
+         <i18n>
+            <key>headcountForecast.label.name</key>
+            <en>名称</en>
+            <zh>名称</zh>
+            <tw>名称</tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type>text</type><!-- text|date -->
+            <format>text</format><!-- number|text -->
+            <required>true</required>
+         </component>
+       </field>
+      
+        <field>
+         <sysObj></sysObj><!-- currency -->
+         <sysMember>
+            <memberType></memberType><!-- InternalUser|InternalUser,ExternalUser|InternalUser,ExternalUser,Committee|InternalUser,ExternalUser,Committee,Group|InternalUser,ExternalUser,Committee,Group,Organization -->
+            <involvement></involvement>
+         </sysMember>
+         <fieldName>quantity</fieldName>
+         <fieldType>java.lang.Double</fieldType> <!-- String|Date|Integer|Double -->
+         <columnName>Quantity</columnName>
+         <columnType>decimal(18, 2)</columnType><!-- 建表时的字段数据类型，可以使8M 自定义类型。如 ts, decimal(18, 2), id, type2 eg.-->
+         <notnull>true</notnull>
+         <defaultValue></defaultValue><!-- auto -->
+         <options></options>
+         <pk>false</pk>
+         <show>true</show>
+         <showInAdvanceSearch>false</showInAdvanceSearch>
+         <showInList>true</showInList>
+         <i18n>
+            <key>headcountForecast.label.quantity</key>
+            <en>需求人数</en>
+            <zh>需求人数</zh>
+            <tw>需求人数</tw>
+         </i18n>
+         <readonly>false</readonly>
+         <component>
+            <type>text</type><!-- text|date -->
+            <format>number</format><!-- number|text -->
+            <required>true</required>
+         </component>
+       </field>
+	</fields>
+</entity>
