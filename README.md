@@ -3,6 +3,7 @@ CodeGenerator
 
 Swing + Apach Velocity编写的代码生成工具
 
+说明: 用于生成代码的模板是定制的，无法实现多兼容性，故仅可借鉴。
 
 1. 支持普通类型字段定义
 
